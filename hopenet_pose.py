@@ -24,7 +24,7 @@ class HopenetPose(object):
         model = hopenet.Hopenet(torchvision.models.resnet.Bottleneck, [3, 4, 6, 3], 66)
         saved_state_dict = torch.load(self.config.MODEL)
         model.load_state_dict(saved_state_dict)
-        idx_tensor = [idx for idx in xrange(66)]
+        idx_tensor = [idx for idx in range(66)]
         idx_tensor = torch.FloatTensor(idx_tensor)
         if self.config.USE_CUDA:
             model = model.cuda()
