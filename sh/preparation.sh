@@ -17,4 +17,4 @@ if [ ! -d $models_path ]; then
     mkdir $models_path
 fi
 
-wget https://www.dropbox.com/s/85xtdr4e1ks1bmu/hopenet_robust_alpha1.pkl -P $models_path
+wget https://www.dropbox.com/s/d9fyj7ukhhagh4j/hopenet_robust_alpha1.pkl -P $models_path
